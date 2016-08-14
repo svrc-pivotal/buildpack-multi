@@ -1,14 +1,12 @@
-# heroku-buildpack-multi
+# buildpack-multi
 
-Use multiple buildpacks on your app
+Use multiple buildpacks on your app.  Useful if you need to install Ubuntu packages via apt first.
 
 ## Usage
 
-    $ heroku buildpacks:set https://github.com/ddollar/heroku-buildpack-multi.git
-
     $ cat .buildpacks
-    https://github.com/heroku/heroku-buildpack-nodejs.git#0198c71daa8
-    https://github.com/heroku/heroku-buildpack-ruby.git#v86
+    https://github.com/pivotal-cf-experimental/apt-buildpack
+    https://github.com/cloudfoundry/java-buildpack
 
 ## License
 
